@@ -1,0 +1,332 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{homepage}{%
+\section{Homepage}\label{homepage}}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310164227681.png}
+\caption{image-20230310164227681}
+\end{figure}
+
+\hypertarget{ux4e3bux754cux9762ux663eux793a}{%
+\subsection{主界面显示}\label{ux4e3bux754cux9762ux663eux793a}}
+
+\hypertarget{4ux4e2aux7a97ux53e3}{%
+\subsubsection{4个窗口}\label{4ux4e2aux7a97ux53e3}}
+
+1、月收入
+
+2、月支出
+
+3、本日收入/支出
+
+4、计划：最近设置的计划的总支出
+
+\hypertarget{accountsux8d26ux6237ux8bb0ux5f55}{%
+\section{ACCOUNTS账户记录}\label{accountsux8d26ux6237ux8bb0ux5f55}}
+
+\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310165745110.png}\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310165917653.png}
+
+\hypertarget{ux903bux8f91}{%
+\subsection{逻辑：}\label{ux903bux8f91}}
+
+方案1
+
+\textbf{收入/支出模式，分开管理}（可以选择）
+
+方案2
+
+\textbf{只记录收支的绝对值}
+
+\hypertarget{dateux65e5ux671f}{%
+\subsubsection{date日期：}\label{dateux65e5ux671f}}
+
+默认显示当月的日历，通过点击日历上的每个日期按钮，下方的record跳转到对应日期的记录。
+
+年/月份可以切换。
+
+（根据收入/支出的数字量大小，改变日历对应日期块的背景颜色）
+
+\hypertarget{recordux8bb0ux5f55}{%
+\subsubsection{record记录}\label{recordux8bb0ux5f55}}
+
+显示对应日期的所有记账记录数据。
+
+记录可以点击，跳转到\textbf{记录修改界面}。
+
+\hypertarget{ux8bb0ux5f55ux4feeux6539ux754cux9762}{%
+\paragraph{记录修改界面：}\label{ux8bb0ux5f55ux4feeux6539ux754cux9762}}
+
+\textbf{需要先加载已有数据}
+
+记录显示和编辑
+
+\hypertarget{ux8bb0ux5f55ux5305ux62ec-1}{%
+\subparagraph{记录包括}\label{ux8bb0ux5f55ux5305ux62ec-1}}
+
+时间
+
+类别tag：
+
+支出：餐饮、购物、交通、住宿、教育、娱乐、旅游、医疗、其他
+
+收入：工资、理财、其他
+
+金额
+
+(计划）
+
+(备注)
+
+\textbf{修改/删除功能}
+
+\textbf{返回、保存（跳转回record记录界面）}
+
+\hypertarget{chartux56feux6807}{%
+\section{chart图标}\label{chartux56feux6807}}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310172043514.png}
+\caption{}
+\end{figure}
+
+\hypertarget{ux56feux8868ux529fux80fd}{%
+\subsection{图表功能：}\label{ux56feux8868ux529fux80fd}}
+
+\hypertarget{ux997cux56feux652fux51faux7c7bux522b}{%
+\subsubsection{饼图：支出类别}\label{ux997cux56feux652fux51faux7c7bux522b}}
+
+按照自然月（修改日期功能）显示类别的比例；
+
+\hypertarget{ux6298ux7ebfux56fe}{%
+\subsubsection{折线图}\label{ux6298ux7ebfux56fe}}
+
+按照日期显示每天趋势
+
+\hypertarget{ux8bbeux7f6esetting}{%
+\section{设置setting}\label{ux8bbeux7f6esetting}}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310173535126.png}
+\caption{}
+\end{figure}
+
+\hypertarget{theme}{%
+\subsection{theme：}\label{theme}}
+
+\textbf{主题二级界面：}
+
+返回按钮
+
+选择颜色
+
+保存确定
+
+\hypertarget{ux9884ux7b97ux8bbeux7f6ebudget}{%
+\subsection{预算设置budget}\label{ux9884ux7b97ux8bbeux7f6ebudget}}
+
+（弹窗）
+
+返回按钮
+
+输入数字
+
+确认
+
+\hypertarget{ux7c7bux522buxff09}{%
+\subsection{（类别）}\label{ux7c7bux522buxff09}}
+
+\hypertarget{ux52a0ux53f7}{%
+\section{加号}\label{ux52a0ux53f7}}
+
+记录显示和编辑
+
+\hypertarget{ux8bb0ux5f55ux5305ux62ec-2}{%
+\subsection{记录包括}\label{ux8bb0ux5f55ux5305ux62ec-2}}
+
+时间
+
+类别tag：
+
+支出：餐饮、购物、交通、住宿、教育、娱乐、旅游、医疗、其他
+
+收入：工资、理财、其他
+
+金额
+
+(计划）
+
+(备注)
+
+\textbf{返回、保存}
+
+\hypertarget{plan}{%
+\section{plan}\label{plan}}
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310175647531.png}
+\caption{}
+\end{figure}
+
+界面显示
+
+添加plan
+
+每个项目：包括内容（相关收支记录，总计）、编辑
+
+\begin{figure}
+\centering
+\includegraphics{C:/Users/周子扬/AppData/Roaming/Typora/typora-user-images/image-20230310175923942.png}
+\caption{}
+\end{figure}
+
+\hypertarget{ux5de5ux5177ux6761}{%
+\section{工具条：}\label{ux5de5ux5177ux6761}}
+
+加号：添加新的记账记录
+
+accouts:跳转账户记录界面
+
+charts：跳转图标界面
+
+plan：跳转plan界面
+
+setting:跳转到setting
+
+\hypertarget{ux6570ux636eux5e93}{%
+\section{数据库}\label{ux6570ux636eux5e93}}
+
+Table 1. Account Information Table
+
+\begin{longtable}[]{@{}l@{}}
+\toprule()
+Attributes  \\
+\midrule()
+\endhead
+AutoID  \\
+CategoryID  \\
+PlanID  \\
+Date  \\
+Amount  \\
+收支标识位 \\
+\bottomrule()
+\end{longtable}
+
+Table 2. Plan Information Table
+
+\begin{longtable}[]{@{}l@{}}
+\toprule()
+Attributes  \\
+\midrule()
+\endhead
+AutoID  \\
+PlanName  \\
+Budget  \\
+\bottomrule()
+\end{longtable}
+
+Table 3. Category Information Table
+
+\begin{longtable}[]{@{}l@{}}
+\toprule()
+Attributes  \\
+\midrule()
+\endhead
+AutoID  \\
+Type  \\
+CategoryName  \\
+IconName  \\
+\bottomrule()
+\end{longtable}
+
+table4
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule()
+id & \\
+\midrule()
+\endhead
+预算 & \\
+\bottomrule()
+\end{longtable}
+
+\end{document}
